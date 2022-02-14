@@ -1,15 +1,50 @@
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 header {
   background-color: rgb(201, 201, 201);
   height: calc(100% * 0.1);
+  display: flex;
+  flex-direction: row;
 }
 section {
   background-color: rgb(153, 153, 153);
   height: calc(100% * 0.7);
+  display: flex;
+  flex-direction: column;
 }
 footer {
   background-color: rgb(112, 112, 112);
   height: calc(100% * 0.2);
+  display: flex;
+  flex-direction: row;
+}
+header div:nth-child(1) {
+  width: 12%;
+  background-color: rgb(248, 234, 112);
+}
+header div:nth-child(2) {
+  width: 58%;
+  background-color: rgb(192, 180, 68);
+}
+header div:nth-child(3) {
+  width: 30%;
+  background-color: rgb(160, 148, 46);
+}
+section div {
+  height: 40%;
+  background-color: rgb(247, 243, 41);
+}
+section article {
+  height: 60%;
+  background-color: rgb(145, 142, 7);
+}
+footer article {
+  width: 25%;
+  background-color: rgb(170, 154, 14);
+}
+.mright {
+  border-right: 1px solid black;
 }
