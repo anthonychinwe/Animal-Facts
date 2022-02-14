@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+}
+header {
+  background-color: rgb(201, 201, 201);
+  height: calc(100% * 0.1);
+}
+section {
+  background-color: rgb(153, 153, 153);
+  height: calc(100% * 0.7);
+}
+footer {
+  background-color: rgb(112, 112, 112);
+  height: calc(100% * 0.2);
+}
