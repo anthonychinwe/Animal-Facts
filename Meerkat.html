@@ -11,26 +11,58 @@
 
 <body>
     <header>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <!-- Looked up 'child selectors' to resolve an unwanted inheritance issue here -->
+            <div><img title="username" src="resources\circle-user-solid.svg" alt=""></div>
+            <div> username</div>
+        </div>
+        <div>
+            <h1>ANIMAL FACTS</h1>
+        </div>
+        <div>
+            <!-- Experienced some issues here regarding overflowing form content. Did a quick read on the overflow topic -->
+            <form action="/search">
+                <input type="text" name="serch" id="search" placeholder="search site">
+                <a href="" title="Search this site"><img src="resources\icons8-search-128.png" alt=""></a>
+            </form>
+        </div>
     </header>
     <section>
         <div>
-            <!-- <div></div> -->
+            <img src="resources\Meerkat (1).png" alt="A smiling meerkat">
         </div>
-        <article>
-            <!-- <div></div>
-            <div></div>
-            <div></div>
-            <div></div> -->
+        <article class="article">
+            <div><img src="resources\icons8-cat-footprint-96.png" alt="Paw icon"></div>
+            <div><img src="resources\icons8-cat-footprint-96.png" alt="Paw icon"></div>
+            <div><img src="resources\icons8-cat-footprint-96.png" alt="Paw icon"></div>
+            <div><img src="resources\icons8-cat-footprint-96.png" alt="Paw icon"></div>
         </article>
     </section>
     <footer>
-        <article class="mright"></article>
-        <article class="mright"></article>
-        <article class="mright"></article>
-        <article></article>
+        <article class="mright">
+            <div>
+                <img src="resources\house-solid (1).svg" alt="home">
+                <h3>HOME</h3>
+            </div>
+        </article>
+        <article class="mright">
+            <div>
+                <img src="resources\phone-flip-solid.svg" alt="contact">
+                <h3>CONTACT</h3>
+            </div>
+        </article>
+        <article class="mright">
+            <div>
+                <img src="resources\users-solid.svg" alt="about us">
+                <h3>ABOUT US</h3>
+            </div>
+        </article>
+        <article>
+            <div>
+                <img src="resources\books-svgrepo-com.svg" alt="resources">
+                <h3>RESOURCES</h3>
+            </div>
+        </article>
     </footer>
 </body>
 

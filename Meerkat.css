@@ -21,30 +21,114 @@ footer {
   display: flex;
   flex-direction: row;
 }
-header div:nth-child(1) {
+header > div:nth-child(1) {
   width: 12%;
   background-color: rgb(248, 234, 112);
+  display: flex;
+  flex-direction: row;
 }
-header div:nth-child(2) {
+header > div:nth-child(2) {
   width: 58%;
   background-color: rgb(192, 180, 68);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-header div:nth-child(3) {
+header > div:nth-child(3) {
   width: 30%;
   background-color: rgb(160, 148, 46);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 section div {
   height: 40%;
   background-color: rgb(247, 243, 41);
 }
-section article {
+section > article {
   height: 60%;
   background-color: rgb(145, 142, 7);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-footer article {
+footer > article {
   width: 25%;
   background-color: rgb(170, 154, 14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .mright {
   border-right: 1px solid black;
+}
+
+header > div:nth-child(1) > div:nth-child(1) {
+  width: 60%;
+  background-color: rgb(152, 241, 149);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header > div:nth-child(1) > div:nth-child(2) {
+  width: 40%;
+  background-color: rgb(102, 185, 99);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 1.3em;
+  margin-left: 1em;
+}
+img {
+  height: 100%;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+form > a {
+  width: 30%;
+  height: 50%;
+  margin-left: 5px;
+}
+section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section > div > img {
+  height: 90%;
+}
+.article > div:nth-child(n) {
+  background-color: rgb(51, 253, 61);
+  width: 45%;
+  height: 45%;
+  border-radius: 4% 35% 50% 80%;
+}
+.article > div:nth-child(n) > img {
+  height: 30%;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+footer > article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
 }
