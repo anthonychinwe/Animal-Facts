@@ -132,3 +132,12 @@ footer > article > div {
   align-items: center;
   height: 20%;
 }
+article > div > p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+section > article > div {
+  display: flex;
+  flex-direction: row;
+}
