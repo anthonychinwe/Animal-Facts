@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Meerkat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
     <title>Meerkat Site</title>
 </head>
 
@@ -13,23 +18,24 @@
     <header>
         <div>
             <!-- Looked up 'child selectors' to resolve an unwanted inheritance issue here -->
-            <div><img title="username" src="resources\circle-user-solid.svg" alt=""></div>
-            <div> username</div>
+            <div><img title="user" src="resources\circle-user-solid.svg" alt=""></div>
+            <div> user</div>
         </div>
         <div>
-            <h1>ANIMAL FACTS</h1>
+            <h1 title="Animal Facts">ANIMAL FACTS</h1>
         </div>
         <div>
+            <img class="img" src="resources\icons8-search-128.png" alt="">
             <!-- Experienced some issues here regarding overflowing form content. Did a quick read on the overflow topic -->
             <form action="/search">
                 <input type="text" name="serch" id="search" placeholder="search site">
-                <a href="" title="Search this site"><img src="resources\icons8-search-128.png" alt=""></a>
+                <a href="" title="Search this site"><img src="resources\icons8-search-128.png" alt="search icon"></a>
             </form>
         </div>
     </header>
     <section>
         <div>
-            <img src="resources\Meerkat (1).png" alt="A smiling meerkat">
+            <img src="resources\Meerkat (1).png" alt="A smiling meerkat" title="A smiling Meerkat">
         </div>
         <article class="article">
             <div>
@@ -52,26 +58,26 @@
         </article>
     </section>
     <footer>
-        <article class="mright">
-            <div>
+        <article class="rightBorder">
+            <div class="im">
                 <img src="resources\house-solid (1).svg" alt="home">
                 <h3>HOME</h3>
             </div>
         </article>
-        <article class="mright">
-            <div>
+        <article class="rightBorder">
+            <div class="im">
                 <img src="resources\phone-flip-solid.svg" alt="contact">
                 <h3>CONTACT</h3>
             </div>
         </article>
-        <article class="mright">
-            <div>
+        <article class="rightBorder">
+            <div class="im">
                 <img src="resources\users-solid.svg" alt="about us">
                 <h3>ABOUT US</h3>
             </div>
         </article>
         <article>
-            <div>
+            <div class="im">
                 <img src="resources\books-svgrepo-com.svg" alt="resources">
                 <h3>RESOURCES</h3>
             </div>

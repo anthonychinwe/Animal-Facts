@@ -1,35 +1,37 @@
 body {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 header {
   background-color: rgb(201, 201, 201);
-  height: calc(100% * 0.1);
+  height: 66px;
   display: flex;
   flex-direction: row;
+  border-bottom: 2px solid black;
 }
 section {
   background-color: rgb(153, 153, 153);
-  height: calc(100% * 0.7);
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 footer {
   background-color: rgb(112, 112, 112);
-  height: calc(100% * 0.2);
+  height: 320px;
   display: flex;
   flex-direction: row;
 }
 header > div:nth-child(1) {
   width: 12%;
-  background-color: rgb(248, 234, 112);
+  background-color: #1ae066;
   display: flex;
   flex-direction: row;
+  min-width: 109px;
 }
 header > div:nth-child(2) {
   width: 58%;
-  background-color: rgb(192, 180, 68);
+  background-color: rgb(26, 224, 102);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,7 +39,8 @@ header > div:nth-child(2) {
 }
 header > div:nth-child(3) {
   width: 30%;
-  background-color: rgb(160, 148, 46);
+  min-width: 227px;
+  background-color: rgb(26, 224, 102);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,43 +49,44 @@ header > div:nth-child(3) {
 }
 section div {
   height: 40%;
-  background-color: rgb(247, 243, 41);
+  background-color: #d4e6e9;
 }
 section > article {
   height: 60%;
-  background-color: rgb(145, 142, 7);
+  background-color: #d4e6e9;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 footer > article {
   width: 25%;
-  background-color: rgb(170, 154, 14);
+  background-color: rgb(58, 58, 58);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-.mright {
-  border-right: 1px solid black;
+.rightBorder {
+  border-right: 1px solid rgb(80, 79, 79);
 }
 
 header > div:nth-child(1) > div:nth-child(1) {
   width: 60%;
-  background-color: rgb(152, 241, 149);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 header > div:nth-child(1) > div:nth-child(2) {
   width: 40%;
-  background-color: rgb(102, 185, 99);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  overflow: visible;
 }
 
 input {
@@ -94,12 +98,18 @@ img {
 }
 
 form {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  padding-right: 7px;
+  padding-left: 5px;
+  margin-right: 4px;
+  height: 70%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: 2rem;
+  background-color: #18b153;
+  transition: display 3s;
 }
 form > a {
   width: 30%;
@@ -113,16 +123,22 @@ section > div {
   align-items: center;
 }
 section > div > img {
+  margin: 10px 0px;
   height: 90%;
+  border: 5px solid rgb(24, 177, 83);
+  border-radius: 50%;
 }
 .article > div:nth-child(n) {
-  background-color: rgb(51, 253, 61);
+  background-color: #1ae066;
   width: 45%;
-  height: 45%;
+  min-height: 150px;
   border-radius: 4% 35% 50% 80%;
+  border: 2px solid black;
+  margin: 35px 0px;
+  box-shadow: 12px 20px 7px rgb(94, 94, 94);
 }
 .article > div:nth-child(n) > img {
-  height: 30%;
+  height: 2.2rem;
   margin-top: 3px;
   margin-left: 3px;
 }
@@ -130,14 +146,187 @@ footer > article > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20%;
+  height: 8%;
+  margin-top: 0.3rem;
+  color: #18b153;
+  position: relative;
+  top: 10%;
 }
 article > div > p {
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 30px;
+  font: 1.3rem "Patrick Hand", cursive;
+  margin-top: 10px;
 }
 section > article > div {
   display: flex;
   flex-direction: row;
+}
+h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 3.4rem;
+  text-align: center;
+}
+header > div:nth-child(1) > div:nth-child(2),
+h3 {
+  font-size: 1.17rem;
+  font-family: "Quicksand", sans-serif;
+}
+header > div:nth-child(1) > div:nth-child(1) > img {
+  background-color: #d4e6e9;
+  border-radius: 50%;
+  border: 1px solid #d4e6e9;
+  height: 90%;
+}
+h3 {
+  font-size: 1.1rem;
+}
+.img {
+  display: none;
+  height: 60%;
+}
+footer > article:hover {
+  width: 25%;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 740px) {
+  header {
+    height: 65px;
+  }
+  footer {
+    height: 160px;
+  }
+  section {
+    height: auto;
+  }
+  body {
+    height: auto;
+  }
+  .article > div:nth-child(n) > img {
+    height: 1.8rem;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  header > div:nth-child(1) > div:nth-child(2) {
+    display: none;
+  }
+  header > div:nth-child(1) {
+    width: auto;
+    min-width: 65px;
+  }
+
+  header > div:nth-child(1) > div:nth-child(1) > img {
+    margin-left: 25px;
+  }
+
+  header > div:nth-child(2) {
+    flex-grow: 1;
+  }
+  .article > div:nth-child(n) {
+    margin: 10px 0px;
+    background-color: #1ae066;
+    width: 95%;
+    min-height: 24%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: unset;
+  }
+  section > div > img {
+    margin: 10px 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  header > div:nth-child(1) > div:nth-child(2) {
+    display: none;
+  }
+  header > div:nth-child(1) {
+    width: auto;
+    min-width: 65px;
+  }
+  header > div:nth-child(3) {
+    width: auto;
+    min-width: auto;
+  }
+  header > div:nth-child(1) > div:nth-child(1) > img {
+    margin-left: 25px;
+  }
+  form {
+    display: none;
+  }
+  header > div:nth-child(2) {
+    flex-grow: 1;
+  }
+  .img {
+    display: block;
+    margin-right: 15px;
+  }
+  h3 {
+    display: none;
+  }
+  .im {
+    position: relative;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  section > div > img {
+    height: 70%;
+  }
+  footer > article > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    margin-top: 0.3rem;
+    color: #18b153;
+  }
+}
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  header > div:nth-child(1) > div:nth-child(1) > img {
+    background-color: #d4e6e9;
+    border-radius: 50%;
+    border: 1px solid #d4e6e9;
+    height: 70%;
+  }
+  .img {
+    height: 40%;
+  }
+  article > div > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font: 1rem "Patrick Hand", cursive;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 200px) {
+  header > div:nth-child(1) {
+   display: none;
+  }
+  header > div:nth-child(3) {
+   display: none;
+}
+section > div > img {
+  height: 70px;
+  border: 2px solid rgb(24, 177, 83);
+}
 }
