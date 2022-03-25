@@ -4,20 +4,20 @@ body {
   flex-direction: column;
 }
 header {
-  background-color: rgb(201, 201, 201);
+  background-color: #1ae066;
   height: 66px;
   display: flex;
   flex-direction: row;
   border-bottom: 2px solid black;
 }
 section {
-  background-color: rgb(153, 153, 153);
+  background-color: #d4e6e9;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 footer {
-  background-color: rgb(112, 112, 112);
+  background-color: #707070;
   height: 320px;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@ header > div:nth-child(1) {
 }
 header > div:nth-child(2) {
   width: 58%;
-  background-color: rgb(26, 224, 102);
+  background-color: #1ae066;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,7 +40,7 @@ header > div:nth-child(2) {
 header > div:nth-child(3) {
   width: 30%;
   min-width: 227px;
-  background-color: rgb(26, 224, 102);
+  background-color: #1ae066;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -62,14 +62,14 @@ section > article {
 }
 footer > article {
   width: 25%;
-  background-color: rgb(58, 58, 58);
+  background-color: #3a3a3a;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 .rightBorder {
-  border-right: 1px solid rgb(80, 79, 79);
+  border-right: 1px solid #504f4f;
 }
 
 header > div:nth-child(1) > div:nth-child(1) {
@@ -125,7 +125,7 @@ section > div {
 section > div > img {
   margin: 10px 0px;
   height: 90%;
-  border: 5px solid rgb(24, 177, 83);
+  border: 5px solid #18b153;
   border-radius: 50%;
 }
 .article > div:nth-child(n) {
@@ -133,9 +133,9 @@ section > div > img {
   width: 45%;
   min-height: 150px;
   border-radius: 4% 35% 50% 80%;
-  border: 2px solid black;
+  border: 2px solid #000000;
   margin: 35px 0px;
-  box-shadow: 12px 20px 7px rgb(94, 94, 94);
+  box-shadow: 12px 20px 7px #5e5e5e;
 }
 .article > div:nth-child(n) > img {
   height: 2.2rem;
@@ -187,7 +187,7 @@ h3 {
 }
 footer > article:hover {
   width: 25%;
-  background-color: rgb(41, 41, 41);
+  background-color: #292929;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,8 +208,6 @@ footer > article:hover {
   }
   .article > div:nth-child(n) > img {
     height: 1.8rem;
-    margin-top: 3px;
-    margin-left: 3px;
   }
   h1 {
     font-size: 3rem;
@@ -232,7 +230,6 @@ footer > article:hover {
   }
   .article > div:nth-child(n) {
     margin: 10px 0px;
-    background-color: #1ae066;
     width: 95%;
     min-height: 24%;
     height: fit-content;
@@ -290,12 +287,7 @@ footer > article:hover {
     height: 70%;
   }
   footer > article > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 15%;
-    margin-top: 0.3rem;
-    color: #18b153;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -320,13 +312,13 @@ footer > article:hover {
 }
 @media only screen and (max-width: 200px) {
   header > div:nth-child(1) {
-   display: none;
+    display: none;
   }
   header > div:nth-child(3) {
-   display: none;
-}
-section > div > img {
-  height: 70px;
-  border: 2px solid rgb(24, 177, 83);
-}
+    display: none;
+  }
+  section > div > img {
+    height: 70px;
+    border: 2px solid #18b153;
+  }
 }
