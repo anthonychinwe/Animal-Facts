@@ -192,8 +192,15 @@ footer > article:hover {
   flex-direction: column;
   align-items: center;
 }
+a {
+  color: #18b153;
+  font: 1.1rem "Patrick Hand", cursive;
+}
+a:hover {
+  color: #00a7a7;
+}
 
-@media only screen and (max-width: 740px) {
+@media screen and (max-width: 740px) {
   header {
     height: 65px;
   }
@@ -217,7 +224,6 @@ footer > article:hover {
     display: none;
   }
   header > div:nth-child(1) {
-    width: auto;
     min-width: 65px;
   }
 
@@ -241,7 +247,7 @@ footer > article:hover {
     margin: 10px 0px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -250,7 +256,6 @@ footer > article:hover {
     display: none;
   }
   header > div:nth-child(1) {
-    width: auto;
     min-width: 65px;
   }
   header > div:nth-child(3) {
@@ -279,7 +284,7 @@ footer > article:hover {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   h1 {
     font-size: 2rem;
   }
@@ -289,8 +294,11 @@ footer > article:hover {
   footer > article > div {
     height: 15%;
   }
+  a {
+    display: none;
+  }
 }
-@media only screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
   h1 {
     font-size: 1.2rem;
   }
@@ -310,7 +318,7 @@ footer > article:hover {
     margin-top: 10px;
   }
 }
-@media only screen and (max-width: 200px) {
+@media screen and (max-width: 200px) {
   header > div:nth-child(1) {
     display: none;
   }
